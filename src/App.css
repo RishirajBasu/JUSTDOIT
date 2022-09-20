@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  
+  body {
+    /* background: linear-gradient(
+      90deg,
+      rgba(48, 16, 255, 1) 0%,
+      rgba(100, 115, 255, 1) 100%
+    ); */
+    /* background-color:#011847; */
+    background: linear-gradient(302deg, rgba(0,7,36,1) 56%, rgba(0,117,255,1) 100%, rgba(71,1,51,1) 100%);
+    /* background:radial-gradient(circle, rgba(36,0,6,1) 0%, rgba(1,24,71,1) 86%, rgba(0,117,255,1) 100%); */
+}
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 520px;
+    min-height: 600px;
+    background: #161a2b;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+  }
+  
+  h1 {
+    margin: 32px 0;
+    color: bisque;
+    font-size: 24px;
+  }
+  
+  .complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+  
+  .todo-form {
+    margin-bottom: 32px;
+  }
+  
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid bisque;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: bisque;
+  }
+  
+  .todo-input::placeholder {
+    color: #e2e2e2;
+  }
+  
+  .todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    /* background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%
+    ); */
+    background: linear-gradient(302deg, rgba(0,7,36,1) 56%, rgba(0,117,255,1) 100%, rgba(71,1,51,1) 100%);
+    color: bisque;
+    text-transform: capitalize;
+  }
+  
+  .todo-input.edit {
+    border: 2px solid bisque;
+  }
+  
+  .todo-button.edit {
+    /* background: linear-gradient(
+      90deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(17, 122, 255, 1) 100%
+    ); */
+    background: linear-gradient(302deg, rgba(36,16,0,1) 46%, rgba(215,149,27,1) 100%, rgba(232,161,30,1) 100%, rgba(0,117,255,1) 100%);
+    padding: 16px 22px;
+  }
+  
+  .todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: bisque;
+    /* background: linear-gradient(
+      90deg,
+      rgba(255, 118, 20, 1) 0%,
+      rgba(255, 84, 17, 1) 100%
+    ); */
+    background: rgb(2,0,3);
+    background: linear-gradient(302deg, rgba(2,0,3,1) 26%, rgba(156,48,12,1) 100%, rgba(232,161,30,1) 100%, rgba(0,117,255,1) 100%);
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+  }
+  
+  .todo-row:nth-child(4n + 1) {
+    /* background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%
+    ); */
+    background: rgb(156,48,12);
+background: linear-gradient(302deg, rgba(156,48,12,1) 46%, rgba(215,149,27,1) 93%, rgba(232,161,30,1) 100%, rgba(0,117,255,1) 100%);
+  }
+  
+  .todo-row:nth-child(4n + 2) {
+    /* background: linear-gradient(
+      90deg,
+      rgba(255, 12, 241, 1) 0%,
+      rgba(250, 0, 135, 1) 100%
+    ); */
+    background: rgb(156,48,12);
+background: linear-gradient(302deg, rgba(156,48,12,1) 19%, rgba(31,12,47,1) 100%, rgba(232,161,30,1) 100%, rgba(0,117,255,1) 100%);
+  }
+  
+  .todo-row:nth-child(4n + 3) {
+    background: rgb(11,40,2);
+    background: linear-gradient(302deg, rgba(11,40,2,1) 0%, rgba(156,48,12,1) 2%, rgba(84,25,3,1) 50%, rgba(232,161,30,1) 81%);
+   
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    margin-right: 5px;
+    color: bisque;
+  }
+  
+  .edit-icon {
+    color: bisque;
+  }
